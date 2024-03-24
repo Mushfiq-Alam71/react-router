@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "./Header.css";
 
 const Header = () => {
   return (
@@ -6,30 +7,36 @@ const Header = () => {
       <h1 className="text-3xl font-bold ">My Website</h1>
 
       <nav className="flex flex-row gap-5">
-        <Link
+        <NavLink
           className="btn hover:bg-slate-400 hover:text-white text-2xl font-semibold "
           to="/"
         >
           Home
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           className="btn hover:bg-slate-400 hover:text-white text-2xl font-semibold "
           to="/about"
         >
           About
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           className="btn hover:bg-slate-400 hover:text-white text-2xl font-semibold "
           to="/contact"
         >
           Contact
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           className="btn hover:bg-slate-400 hover:text-white text-2xl font-semibold "
           to="/users"
         >
           Users
-        </Link>
+        </NavLink>
+        <NavLink
+          className="btn hover:bg-slate-400 hover:text-white text-2xl font-semibold "
+          to="/posts"
+        >
+          Posts
+        </NavLink>
       </nav>
     </div>
   );
